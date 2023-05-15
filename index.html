@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #drop_zone {
+            width: 100%;
+            padding: 40px 0 40px 0;
+            border: 2px solid #dddddd;
+            text-align: center;
+        }
+    
+       #drop_zone a {
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+    
+    <div
+        id="drop_zone"
+        ondrop="dropHandler(event);"
+        ondragover="dragOverHandler(event);"
+    >
+        <p>Drag and drop your documents here or <a>click here to add documents</a></p>
+    </div>
+    
+    <script src="drag-drop.js"></script>
+</body>
+</html>
